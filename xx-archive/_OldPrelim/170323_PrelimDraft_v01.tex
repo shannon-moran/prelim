@@ -1,0 +1,73 @@
+\documentclass[oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin=1in]{geometry}
+\geometry{letterpaper}
+\usepackage[parfill]{parskip}    % Begins paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+\usepackage{hyperref}			% Allows me to link in the text with \href{link}{description}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{fancyhdr}
+\usepackage{titling}			% Allows me to set the \droptitle to make it less obnoxious
+\usepackage{titlesec}			% Allows me to use \titlespacing command
+\usepackage{blindtext}			% Allows me to generate Lorem Ipsum
+\usepackage{pdfpages}			% Allows me to include pdf pages with the \includepdf[pages=-]{Filename.pdf} command
+
+% Spacing changes to make the document more compressed
+\usepackage{enumitem}			% Allows me to set spacing to be more compressed for lists globally
+\titlespacing{\section}{0em}{2em}{0em}		% Sauce: http://www.ctex.org/documents/packages/layout/titlesec.pdf, bottom p4
+\setlist{nosep}								% Compresses all lists using enumitem package
+
+%% For type-setting code:
+\usepackage{listings}			% Used for typing up blocks of code
+\usepackage{color}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+% Example of what you can do with this:
+% \lstinputlisting[language=Octave]{BitXorMatrix.m}
+
+% Keep up the weekly report streak!
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Shannon Moran}
+\chead{Weekly Report \#}
+\rhead{\today}
+\rfoot{\thepage}
+
+\title{[Entropy transfer (thermodynamic and information) in materials systems]}
+\author{Shannon Moran}
+\date{June 1, 2016}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\noindent
+\textbf{Committee chair:} Prof. Sharon Glotzer \\ \textbf{Committee members:} \\ Prof. Michael Solomon \\ Prof. Ronald Larson \\ Prof. Xiaoming Mao
+\\ \\
+\noindent 
+This paper is submitted in partial fulfillment of the University of Michigan Chemical Engineering Department Doctoral Candidacy Exam requirements.
+\newpage
+
+
+\end{document}  
