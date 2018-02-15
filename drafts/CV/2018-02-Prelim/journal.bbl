@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{Helgeson2014}
+Helgeson, M.E., Gao, Y., \textbf{Moran, S.E.}, Lee, J., Godfrin, M., Tripathi,
+  A., Bose, A., and Doyle, P.S.
+\newblock \enquote{{Homogeneous percolation versus arrested phase separation in
+  attractively-driven nanoemulsion colloidal gels}}.
+\newblock \emph{Soft Matter}, 10(17):3122, 2014.
+
+\bibitem{Helgeson2012}
+Helgeson, M.E., \textbf{Moran, S.E.}, An, H.Z., and Doyle, P.S.
+\newblock \enquote{{Mesoporous organohydrogels from thermogelling
+  photocrosslinkable nanoemulsions}}.
+\newblock \emph{Nature Materials}, 11(4):344--352, 2012.
+
+\end{thebibliography}

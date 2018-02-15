@@ -1,0 +1,94 @@
+\begin{thebibliography}{10}
+
+\bibitem{Phillips_2014_SoftMatter}
+Carolyn~L. Phillips, Eric Jankowski, Bhaskar~Jyoti Krishnatreya, Kazem~V.
+  Edmond, Stefano Sacanna, David~G Grier, David~J. Pine, and Sharon~C. Gltozer.
+\newblock Digital colloids: reconfigurable clusters as high information density
+  elements.
+\newblock {\em Soft Matter}, 10:7468--7479, 2014.
+
+\bibitem{Huntley_2016_PNAS}
+Miriam~H. Huntley, Arvind Murugan, and Michael~P. Brenner.
+\newblock Information capacity of specific interactions.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  113(21):5841--5846, May 2016.
+
+\bibitem{Parrondo_2015_NaturePhysics}
+Juan M.~R. Parrondo, Jordan~M. Horowitz, and Takahiro Sagawa.
+\newblock Thermodynamics of information.
+\newblock {\em Nature Physics}, 11:131--139, 2015.
+
+\bibitem{Wales_2017_JChemPhys}
+David~J. Wales.
+\newblock Atomic clusters with addressable complexity.
+\newblock {\em The Journal of Chemical Physics}, 146(054306), 2017.
+
+\bibitem{Meng_2010_Science}
+Guangnan Meng, Natalie Arkus, Michael~P. Brenner, and Vinothan~N. Manoharan.
+\newblock The free-energy landscape of clusters of attractive hard spheres.
+\newblock {\em Science}, 327:560--563, 2010.
+
+\bibitem{Jacobs_2015_JChemPhys}
+William~M. Jacobs, Aleks Reinhardt, and Daan Frenkel.
+\newblock Communication: Theoretical prediction of free-energy landscapes for
+  complex self-assembly.
+\newblock {\em The Journal of Chemical Physics}, 142(021101), 2015.
+
+\bibitem{Ke_2012_Science}
+Yonggang Ke, Luvena~L. Ong, William~M. Shih, and Peng Yin.
+\newblock Three-dimensional structures self-assembled from dna bricks.
+\newblock {\em Science}, 338(6111):1177--1183, 2012.
+
+\bibitem{Reinhardt_2014_PRL}
+Aleks Reinhardt and Daan Frenkel.
+\newblock Numerical evidence for nucleated self-assembly of dna brick
+  structures.
+\newblock {\em Physical Review Letters}, 112(23), Jun 2014.
+
+\bibitem{Dill_1993_CurrOpinStructBiol}
+Ken~A. Dill.
+\newblock Folding proteins: finding a needle in a haystack.
+\newblock {\em Current Opinion in Structural Biology}, 3:99--103, 1993.
+
+\bibitem{Jacobs_2015_PNAS}
+William~M. Jacobs, Aleks Reinhardt, and Daan Frenkel.
+\newblock Rational design of self-assembly pathways for complex multicomponent
+  structures.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  112(20):6313--6318, May 2015.
+
+\bibitem{Jankowski_2009_JChemPhys}
+Eric Jankowski and Sharon~C. Glotzer.
+\newblock A comparison of new methods for generating energy-minimizing
+  configurations of patchy particles.
+\newblock {\em The Journal of Chemical Physics}, 131(104104), 2009.
+
+\bibitem{Jankowski_2011_JPhysChemB}
+Eric Jankowski and Sharon~C. Glotzer.
+\newblock Calculation of partition functions for the self-assembly of patch
+  particles.
+\newblock {\em The Journal of Physical Chemistry B}, 115:14321--14326, 2011.
+
+\bibitem{Jankowski_2012_SoftMatter}
+Eric Jankowski and Sharon~C. Glotzer.
+\newblock Screning and designing patchy particles for optimized self-assembly
+  propensity through assembly pathway engineering.
+\newblock {\em Soft Matter}, 8(2852), 2012.
+
+\bibitem{Jacobs_2016_BiophysicalJournal}
+William~M. Jacobs and Eugene~I. Shakhnovich.
+\newblock Structure-based prediction of protein-folding transition paths.
+\newblock {\em Biophysical Journal}, 111:925--936, 2016.
+
+\bibitem{Long_2014_JPhysChemB}
+Andrew~W. Long and Andrew~L. Ferguson.
+\newblock Nonlinear machine learning of patchy colloid self-assembly pathways
+  and mechanisms.
+\newblock {\em The Journal of Physical Chemistry B}, 118:4228--4244, 2014.
+
+\bibitem{Stern_2017_arxiv}
+Menachem Stern, Matthew Pinson, and Arvind Murugan.
+\newblock The difficulty of folding self-folding origami.
+\newblock {\em arXiv}, 1703.04161v1, 2017.
+
+\end{thebibliography}

@@ -1,0 +1,74 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{AICHE2017}
+Vilas B\^{o}as~F\'{a}vero, C., \textbf{Moran, S.E.}, and Eniola-Adefeso, O.
+\newblock \enquote{Peer mentoring in graduate school - fostering diversity to
+  achieve scholarly excellence}.
+\newblock \emph{{\normalfont Poster submitted to:} American Institute of
+  Chemical Engineers Annual Meeting}. Minneapolis, MN, Oct 9 - Nov 3 2017.
+
+\bibitem{EGS2016}
+\textbf{Moran, S.E.}, Bruss, I.R., and Glotzer, S.C.
+\newblock \enquote{Putting together the building blocks of non-equilibrium
+  self-assembly}.
+\newblock \emph{{\normalfont Poster presented at:} University of Michigan
+  Engineering Graduate Symposium}. Ann Arbor, MI, November 11 2016.
+\newblock \textbf{\emph{Technical session award in ``Chemical Physics''
+  session.}}
+
+\bibitem{CBES2016}
+\textbf{Moran, S.E.}, Dai, C., Bruss, I.R., and Glotzer, S.C.
+\newblock \enquote{How does shape impact active particle behavior?}
+\newblock \emph{{\normalfont Poster presented at:} Center for Bio-Inspired
+  Energy Science Annual Meeting}. Evanston, IL, August 11-12 2016.
+
+\bibitem{Syracuse2016}
+Dai, C., \textbf{Moran, S.E.}, Bruss, I.R., and Glotzer, S.C.
+\newblock \enquote{Collective behavior of self-propelled anisotropic
+  particles}.
+\newblock \emph{{\normalfont Poster presented at:} Active and Smart Matter}.
+  Syracuse, NY, June 19-23 2016.
+
+\bibitem{NUS2011}
+\textbf{Moran, S.E.}, Polim, I., Ng, C.P., Liu, Y., Chan, M., Griffith, L., and
+  Hammond, P.
+\newblock \enquote{Cell plating efficiency dependence on seeding density}.
+\newblock \emph{{\normalfont Poster presented at:} Singapore-MIT Undergraduate
+  Research Fellowship Review}. Singapore, Singapore, July 10 2011.
+
+\bibitem{MIT2011}
+\textbf{Moran, S.E.}, Helgeson, M.E., and Doyle, P.S.
+\newblock \enquote{Polymerizable thermoresponsive nanoemulsions: a novel route
+  to tailored organohydrogels}.
+\newblock \emph{{\normalfont Poster accepted at:} Massachusetts Institute of
+  Technology Program in Polymer Science and Technology Poster Session}.
+  Cambridge, MA, March 18 2011.
+
+\bibitem{AICHE2010}
+Helgeson, M.E., \textbf{Moran, S.E.}, and Doyle, P.S.
+\newblock \enquote{Organohydrogels from thermogelling, photocurable
+  nanoemulsions}.
+\newblock \emph{{\normalfont Poster presented at:} American Institute of
+  Chemical Engineers Annual Meeting}. Salt Lake City, UT, Nov 7-12 2010.
+
+\bibitem{VAI2009}
+\textbf{Moran, S.E.}, Lee, C.S., White, J., Boguslawski, E., and Duesbery, N.
+\newblock \enquote{Differential splice variant expression of {VEGFR-3} in
+  canine tissues}.
+\newblock \emph{{\normalfont Poster presented at:} Van Andel Research Institute
+  Intern Symposium}. Grand Rapids, MI, August 14 2009.
+
+\bibitem{VAI2008}
+\textbf{Moran, S.E.}, Boguslawski, E., and Duesbery, N.
+\newblock \enquote{Anthrax lethal toxin and myeloproliferation in mice}.
+\newblock \emph{{\normalfont Poster presented at:} Van Andel Research Institute
+  Intern Symposium}. Grand Rapids, MI, August 2008.
+
+\end{thebibliography}

@@ -1,3 +1,55 @@
+# Notes from conversation with Paul
+
+ more leaves fold better
+ what features might be breaking levinthal's?
+ the landscape must be funneled in order for these to fold
+ how can we make these landscapes funnel better
+ paul actually went to wales' group to make disconnectivity graphs
+ wales code is really unwieldy-- would take much more time to make code efficient than it would be worth
+ had some preliminary trees,but ultimately bailed because it was too complex
+ disconnectivity should be its own paper with Wales, Morgan
+ Sharon doesn't like Wales, he's kind of weird, Wales is really hands on, even with code development (Paul likes him)
+ leaves were once called nucleation sites for folding in an earlier draft of Paul's paper
+ Leaves are edges that are next to each other (local) that need to form-- so lots of leaves means a net seeded with lots of local, native bonds
+
+ did some simulations seeding the net (icosahedra, which never folded on their own)
+ one connection still wasn't enough, needed more
+ interesting question-- how much do you need to add?
+ specificity efficiency would be interesting
+
+ critical bonds are related to the isostatic structure of the net-- fewest number of bonds that i need to make it rigid
+ with triangle faces, look at the all the matches of the edges-- for it to be minimal and rigid you have to glue enough edges together so that no vertex has been glued twice, but sufficient that each vertex has been glued once
+ cube and dodecahedra are trickier-- some cuts don't introduce degrees of freedom
+ cutting trees / gluing trees -- probably a greedy algorithm that will do this faster than brute force
+
+ understanding the rigidity of the structure is the key question
+ what are the minimal bonds needed to make a structure rigid?
+ some of the cubes have like, one bond that you can make and it will fold completely 
+
+ Information:
+ Paul tried having an interaction matrix between all edges of a net
+ edges aren't independent... so run into trouble
+ maybe you can play a game of adding one bond at a time?
+ binary symmetric channels (0 is folded, 1 is unfolded or something)
+ could be a simplistic model of like, a protein signalling 
+ long-term view of molecular information and robotics
+
+ enumeration algorithm already exists based on the two heuristics
+ calculate the different paths you could take
+ that kind of works
+ this is how that last graph was calculated
+ taking that-- could you like, seed with the first two folds for an icosahedra
+
+ disconnectivity
+
+ pluripotent materials -- no one really has a good way of doing this on a colloidal level
+ how do we go from one sheet to another
+ magnetic particles for reconfiguration might have been used
+
+ diabolos, paul's presentation from august 8-15
+
+
+
 # Notes from meeting with Sharon
 - High information pathway points
 	- flesh out the nets, do totally systematically

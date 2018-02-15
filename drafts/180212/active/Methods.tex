@@ -1,0 +1,80 @@
+% =====
+% Model and dynamics
+% =====
+\subsection*{Model and dynamics}
+
+We study a family of regular polygons of side number $n=3-8$, shown in Fig. \ref{fig:model}A.
+Polygons are modeled as hard particles that interact via a purely repulsive contact potential.
+This contact is modeled with a Weeks-Chandler-Anderson (WCA) potential of radius $r=1$ \cite{WCA_1971}.
+We set particle side length $a$ to maintain a constant $\frac{\sum_is_i}{2\pi r}=9$ for $r=1$.
+
+We also explore anisotropy in the direction a constant active force ($\vec{F}_A$) applied to each particle.
+We set $\vec{F}_A$ to be either perpendicular to a side of the particle (\textit{edge-forward}) or directed directly out a corner (\textit{vertex-forward}), with the orientation of the director locked to the particle.
+Rotational noise of the particles allows the active force to diffuse with particle rotation. % implemented through the integrator
+
+All simulations are run with $\Pe=150$, where $\Pe$ is a measure of active (advective) to diffusive motion. \textcolor{red}{Add formula for \Pe here.}
+In this regime, thermal fluctuations contribute much less to the motion of the particles than does the active driving force.
+To keep the $\Pe$ value constant across all simulations, the magnitude of the active force ($|\vec{F}_A|$) set to 1 and the temperature of the thermal bath governing the fluctuations is set as $T = \frac{|\vec{F}_A|*\sigma}{\Pe}$.
+
+Particle motion is solved for using Langevin equations of motion.
+The magnitude of rotational and translational noise is implemented in the integrator as a function of $T$.
+The magnitude of the random force ($\vec{F}_R$) is chosen via the fluctuation-dissipation theorem to be consistent with the specified drag and temperature, $T$.
+To closely approximate Brownian motion, mass of the particles is set to $m=1e-2$.
+
+The Langevin equations of motion with an active driving force are given by:
+$$ m\frac{\d\vec{v}}{\d t} = \vec{F}_C - \gamma\cdot\vec{v} + \vec{F}_R + \vec{F}_A $$
+$$ \langle |\vec{F}_R|^2\rangle = 2dkT\gamma/\delta t$$
+
+Here, $\vec{F}_C$ is the force on the particle from all potentials and constraint forces, $\gamma$ is the drag coefficient, $\vec{v}$ is the particle's velocity, and $d$ is the dimensionality of the system (2). 
+We approximate the rotational friction drag coefficient in 2D, $\gamma_r$, as a function of the translational friction coefficient $\gamma$ per the Stokes-Einstein relationship: $\gamma_r = \frac{\sigma^2\gamma}{3}$.
+We set the translational drag coefficient $\gamma$ to 1 and calculate $\sigma$ as the diameter of an equi-area disk to a given n-gon.
+
+
+% =====
+% Simulation details
+% =====
+\subsection*{Simulation details}
+
+Each simulation is composed of $N=1e4$ particles, with 10 replicates run at each statepoint.
+Particle positions are randomly initialized and allowed to relax with a spring potential at $\phi=0.10$ \cite{DPD_2011}.
+The spring potential is then turned off and the WCA pair potential turned on (i.e. shape excluded volume) while the box compresses to the target system density.
+Only after these initialization steps is the active force is turned on.
+The direction of the active force is initialized randomly from the set of orientations of interest (either \textit{edge-} or \textit{vertex-facing}).
+
+The simulation is run for $5000\tau$ with a timestep of $dt=1e-3$ (where $\tau = \frac{\sigma\gamma}{|\vec{F}_A|}$, the time it takes a particle to actively travel its own particle length).
+We validate that simulations have reached steady state by the end of these simulations by validating that the system pressure has reached steady state (see SI Fig \ref{fig:SSpressures}).
+\textcolor{red}{Check against this paper in case there are any claims I should be aware of: \cite{SolonEA_2015_NaturePhysics}.}
+The system is initialized for $5e5$ time steps, and compressed to the target density for $5e5$ time steps.
+
+Langevin dynamics simulations are performed on graphic processing units (GPUs) with the HOOMD-blue software package \cite{HOOMD_2008, HOOMD_2015}.
+Shape interactions are modeled using the discrete element method implemented in HOOMD-blue \cite{DEM_2017}.
+
+%TBD: How we determined the drag coefficients, rotational diffusivity to use \\
+%\cite{BetEA_2016_arxiv}: Efficient shapes for microswimmers \\
+%\cite{Purcell_1977_AmericanJPhys}: Life at low reynolds numbers \\
+
+
+% =====
+% Determining critical density
+% =====
+\subsection*{Determining critical density}
+
+% Add critical density to methods, and why others from the literature can't work
+
+There is not yet an accepted best-practice method for determining whether a system of active particles has clustered.
+In one study, a system was considered ``clustered'' if the fraction of system particles in the largest cluster was ${\geq}0.2$.
+However, this method is ill-suited for our systems, which include clearly phase-separated systems of many small clusters.
+Next, other studies have used a local-density histogram of randomly-sampled points of the simulation box \cite{Bruss_2017_arxiv}.
+If the histogram displayed two peaks, the system was considered phase-separated.
+However, the very low system densities studied here limit the efficacy of this approach (i.e. at a packing fraction of 0.01, the high-density ``peak'' would be ${\leq}2\%$ the magnitude of the larger peak).
+
+To determine phase separation even at low densities, we calculate two separate histograms of local densities at a radius of \textcolor{red}{X} from : (1) randomly sampled points ($N=1e5$) and (2) about each particle ($N=1e4$).
+We then calculated a position-normalized local density histogram of the system by multiplying the frequencies of local densities in each bin by one another.
+If the resulting histogram has a high-density peak ${\geq}20\%$ the height of the low-density peak, we consider the system to be phase-separated.
+
+The fraction of systems that has phase-separated for a given system packing fraction is the fraction of the ten replicates run at each packing fraction which has phase separated, based on the above criteria.
+
+
+
+
+

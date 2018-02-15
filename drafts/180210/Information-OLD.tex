@@ -1,0 +1,69 @@
+\subsection{What is information?}
+% Good quora: https://math.stackexchange.com/questions/331103/intuitive-explanation-of-entropy
+
+Let's first look at information in the context of communications theory.
+
+The \textit{information}, $I$, we get from an event happening is given by:
+\begin{equation}
+I(p) = -\log{(p)}_b
+\end{equation}
+
+where $p$ is the probability of an event happening and $b$ is the base.
+Base 2 is commonly used in information theory, and forms the unit of information.
+For instance, the unit of base 2 information is a bit, base 3 are trits, base 10 are Harleys, and base $e$ are nats.
+
+In 195X, Claude Shannon also extended this concept by introducing the concept of \textit{information entropy}.
+In this context, entropy is the average (expected) amount of information gained from a given event.
+Specifically, for an event with $n$ different outcomes this can be written as:
+\begin{equation}
+\text{Entropy} = \sum_{i=1}^{n}p_i\log{p_i}
+\end{equation} 
+
+For a discrete random variable $X$ with $p(x)$, the entropy can be written as:
+\begin{equation}
+H(X) = \sum_x p(x)\log{p(x)}
+\end{equation}
+
+
+Entropy does not range from 0 to 1.
+The range is set based on the number of possible outcomes $n$, i.e. $0\leq\text{Entropy}\leq\log{(n)}$.
+Entropy is equal to 0 (minimum entropy) when one of the probabilities is 1 and the rest are 0's.
+Entropy is $\log{(n)}$ (maximum entropy) when all the probailities have equal values of 1/n.
+
+In the case of designing specific outcomes for an event, then, we want to minimize the entropy along each leg of the pathway leading to an event.
+Put another way, we want to maximize the probability that the event will proceed down the pathway we want it to.
+
+However, the concept of ``information'' in this context is then counter-intuitive.
+Information in communication refers to how likely an event is.
+When a rare event happens, we gain more ``information'' from that event.
+However, in the context of designing specific outcomes, we are not looking to read out bits of information once an event has happened.
+We are looking to design the likelihood of an event occurring.
+
+% Might want to include a ball-selection example here: http://www.csun.edu/~twang/595DM/Slides/Information%20&%20Entropy.pdf
+
+In the words of MIT professor C\`{e}sar Hidalgo, ``It is hard for us humans to separate information from meaning because we cannot help interpreting messages.'' 
+We face the same problem here-- by saying that a pathway has more information than another, we are implicitly saying that it is a rarer event than a lower-information pathway.
+
+Counter-intuitively, in designing pathways for self-assembly, then, we are looking to design minimum-information pathways.
+\textbf{However, in aligning with our intuition from self-assembly, this means we are looking to maximize the entropy of an assembly pathway.}
+
+
+
+
+
+% =====
+% PAUL'S PAPER
+% ====
+\subsection{Notes from Paul's paper}
+
+Information about nets \cite{HowtoFoldIt,GeometricFoldingAlgorithms}.
+
+Markov State Models. Markov State Models (MSM) have been used to study protein folding \cite{Bowman_2010_PNAS,Noe_2009_PNAS} and virus capsid assembly \cite{Perkett_2014_JChemPhys} and can provide a detailed view into the dynamics and thermodynamics of the assembly landscape.
+
+\begin{enumerate}
+\item Each simulation snapshot is classified as a discrete state
+\item If potential energy between bonds is sufficiently low, then the edges are considered to be bonded
+\end{enumerate}
+
+We used Transition Path Theory to determine the reactive flux, $f_{ij}=q_j^+\pi_iP_{ij}q_i^-$, along the dominant pathways \cite{Perkett_2014_JChemPhys,Metzner_2009_MMS,Weinan_2010_AnnRevPhysChem}.
+The dominant paths were computed using the ``bottle neck'' algorithm \cite{Noe_2009_PNAS,Metzner_2009_MMS}.

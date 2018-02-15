@@ -1,0 +1,149 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin=1in]{geometry}
+\geometry{letterpaper}
+\usepackage[parfill]{parskip}    % Begins paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+\usepackage{hyperref}			% Allows me to link in the text with \href{link}{description}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{titling}			% Allows me to set the \droptitle to make it less obnoxious
+\usepackage{titlesec}			% Allows me to use \titlespacing command
+\usepackage{blindtext}			% Allows me to generate Lorem Ipsum
+\usepackage{pdfpages}			% Allows me to include pdf pages with the \includepdf[pages=-]{Filename.pdf} command
+
+% Set text to 6 lines of 11pt font per 1 inch. Normal baseline skip is 13.6
+% Source: https://tex.stackexchange.com/questions/23824/6-lines-in-one-inch
+% 1 inch = 72.27pt
+% First line is 11pts
+% Remainder spread as (61.27/5)/13.6 = 0.901
+\linespread{0.901}
+
+% Spacing changes to make the document more compressed
+\usepackage{enumitem}			% Allows me to set spacing to be more compressed for lists globally
+\titlespacing{\section}{0em}{2em}{0em}		% Sauce: http://www.ctex.org/documents/packages/layout/titlesec.pdf, bottom p4
+\setlist{nosep}								% Compresses all lists using enumitem package
+
+% Headers
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Shannon Moran}
+%\chead{}
+\rhead{Last updated: \today}
+\rfoot{\thepage}
+
+\title{Identifying and designing an information-driven approach for targeted colloidal self-assembly}
+\author{Shannon Moran}
+\date{February, 2018}
+
+
+
+
+
+
+\begin{document}
+
+% =====
+% TITLE PAGE
+% =====
+\maketitle
+\thispagestyle{empty}
+\noindent
+This paper is submitted in partial fulfillment of the University of Michigan Chemical Engineering Department Preliminary Exam requirements.
+\\ \\
+\textbf{Committee:} 
+\begin{quote} 
+Prof. Sharon Glotzer (Advisor) \\ Prof. Ronald Larson \\ Prof. Robert Ziff \\ Prof. Xiaoming Mao (Cognate: Physics)
+\end{quote}
+\par
+Note: Total length must be less than 15 pages of text. Includes figures, excludes title page, list of references, and CV.
+
+
+% =====
+% CONTENTS
+% =====
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+\newpage
+\listoffigures
+
+
+% =====
+% ONE PAGE SUMMARY
+% =====
+\newpage
+\include{Summary}
+
+
+% =====
+% MAIN TEXT
+% =====
+\clearpage
+\setcounter{page}{1}
+
+
+% =====
+% MOTIVATION AND LITERATURE REVIEW
+% =====
+\input{Introduction}
+% 1 page statement of the problem, purpose and significance of the research
+
+\newpage
+%\input{Background}
+% Literature survey and description of research already performed by the applicant
+
+% =====
+% RESEARCH PROPOSAL
+% =====
+\input{ProposedWork}
+
+% =====
+% PRIOR WORK: SEMISYNBIO PROPOSAL
+% =====
+\input{SemiSynBio}
+
+% =====
+% PRIOR WORK: ACTIVE SHAPES
+% =====
+%\input{ActiveShapes}
+
+
+\section{Time table}
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=6.5in]{../figures/gantt.pdf}
+\caption{Key milestones and tasks from Preliminary Exam through target defense date.}
+\label{fig:gantt}
+\end{center}
+\end{figure}
+
+See Figure \ref{fig:gantt} for key tasks and milestones through 2020, based on the projects outlined in the above sections.
+
+\section{Conclusions and potential impact}
+
+Ultimately, tailoring self-assembly and addressable complexity are driven by the question:
+
+\begin{center}How do I give particles in my system sufficient information to find their proper position in a target whole?\end{center}
+
+In systems targeting particular structures, tailored attraction (experimentally via single-stranded DNA or theoretically via an attractive potential) and repulsion can be used to tailor the structure of particle assembly.
+In systems targeting addressable complexity with DNA origami and protein folding, such direction can be given with exact detail through genetic code.
+Work by Brenner and Manoharan has sought to quantify the amount of specificity bonds in such systems can contain, and the limits on target system complexity given differing bond informations.
+
+However, missing in this conversation is a measure of the importance of each individual interaction on the emergent behavior of the whole system.
+I intend to contribute in part during the remainder of my PhD.
+Instead of simply observing emergent behavior as an outcome of specifically-designed behavior of individuals, we could instead engineer such behavior as a quantifiable outcome of the interaction of an information-rich network of agents.
+Having such knowledge may allow us to embed multiple ``states'' in a material, such as the minimum folds to move between two target origami structures \cite{An_2011_Robotica}.
+Being able to measure, and ultimately control, the assembly directions stored in a starting material is a critical step to enabling materials by design and advancing materials science.
+
+% ======
+% BIBLIOGRAPHY
+% ======
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{../../library/_PrelimBibliography}
+
+\end{document}

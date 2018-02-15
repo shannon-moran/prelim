@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: prep.aux
+The style file: cv.bst
+Database file #1: Publications.bib
+Warning--empty year in Shapes2018
+You've used 1 entry,
+            2530 wiz_defined-function locations,
+            543 strings with 4627 characters,
+and the built_in function-call counts, 314 in all, are:
+= -- 12
+> -- 11
+< -- 0
++ -- 4
+- -- 3
+* -- 18
+:= -- 40
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 35
+empty$ -- 29
+format.name$ -- 4
+if$ -- 58
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 10
+newline$ -- 14
+num.names$ -- 1
+pop$ -- 22
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 5
+stack$ -- 0
+substring$ -- 0
+swap$ -- 18
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 1
+width$ -- 2
+write$ -- 17
+(There was 1 warning)

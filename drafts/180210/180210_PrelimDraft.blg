@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: 180210_PrelimDraft.aux
+A level-1 auxiliary file: Summary.aux
+The style file: unsrt.bst
+Database file #1: ../../library/_PrelimBibliography.bib
+You've used 57 entries,
+            1791 wiz_defined-function locations,
+            830 strings with 14558 characters,
+and the built_in function-call counts, 13861 in all, are:
+= -- 1199
+> -- 692
+< -- 1
++ -- 252
+- -- 195
+* -- 1060
+:= -- 2255
+add.period$ -- 171
+call.type$ -- 57
+change.case$ -- 54
+chr.to.int$ -- 0
+cite$ -- 57
+duplicate$ -- 553
+empty$ -- 1287
+format.name$ -- 195
+if$ -- 3059
+int.to.chr$ -- 0
+int.to.str$ -- 57
+missing$ -- 60
+newline$ -- 288
+num.names$ -- 57
+pop$ -- 79
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 256
+stack$ -- 0
+substring$ -- 1078
+swap$ -- 104
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 107
+width$ -- 59
+write$ -- 627

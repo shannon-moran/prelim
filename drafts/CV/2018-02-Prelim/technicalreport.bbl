@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{NIST2012}
+Helgeson, M.E., \textbf{Moran, S.E.}, and Doyle, P.S.
+\newblock \enquote{Self-assembling organohydrogels: liquid dispersions with
+  solid-like behavior}.
+\newblock Technical Report 1143, National Institutes of Standards and
+  Technology, Center for Neutron Research, Dec 2012.
+
+\end{thebibliography}

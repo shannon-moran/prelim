@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{CEE2018}
+Vilas B\^{o}as~F\'{a}vero*, C., \textbf{Moran, S.E.}*, and Eniola-Adefeso, O.
+\newblock \enquote{The power of peer mentoring in enabling a diverse and
+  inclusive environment in a chemical engineering graduate program}.
+\newblock \emph{{\normalfont Accepted:} Chemical Engineering Education},
+  Special Issue on Diversity in Chemical Engineering, 2018.
+\newblock *Contributed equally to this work.
+
+\end{thebibliography}

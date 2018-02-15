@@ -1,0 +1,167 @@
+\documentclass[11pt]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin=1in]{geometry}
+\geometry{letterpaper}
+\usepackage[parfill]{parskip}    % Begins paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+\usepackage{hyperref}			% Allows me to link in the text with \href{link}{description}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{titling}			% Allows me to set the \droptitle to make it less obnoxious
+\usepackage{titlesec}			% Allows me to use \titlespacing command
+\usepackage{blindtext}			% Allows me to generate Lorem Ipsum
+\usepackage{pdfpages}			% Allows me to include pdf pages with the \includepdf[pages=-]{Filename.pdf} command
+\renewcommand{\familydefault}{\sfdefault}	% uses san serif font
+%\usepackage{cmss}			% changes font
+
+% Set text to 6 lines of 11pt font per 1 inch. Normal baseline skip is 13.6
+% Source: https://tex.stackexchange.com/questions/23824/6-lines-in-one-inch
+% 1 inch = 72.27pt
+% First line is 11pts
+% Remainder spread as (61.27/5)/13.6 = 0.901
+%\linespread{0.901}
+
+% Define useful shortcuts
+\def\d{\text{d}}
+\def\Pe{\text{Pe}}
+
+% Spacing changes to make the document more compressed
+\usepackage{enumitem}			% Allows me to set spacing to be more compressed for lists globally
+\titlespacing{\section}{0em}{2em}{0em}		% Sauce: http://www.ctex.org/documents/packages/layout/titlesec.pdf, bottom p4
+\setlist{nosep}								% Compresses all lists using enumitem package
+
+% Headers
+\pagestyle{fancy}
+%\fancyhf{}
+\lhead{Shannon Moran}
+%\chead{}
+%\rhead{}
+%\rfoot{Moran, \thepage}
+
+\title{Designing an information-driven pathway approach for targeted self-assembly}
+\author{Shannon Moran}
+\date{February 21, 2018}
+
+
+
+
+\begin{document}
+
+% =====
+% TITLE PAGE
+% =====
+\maketitle
+\thispagestyle{empty}
+\noindent
+This paper is submitted in partial fulfillment of the University of Michigan Chemical Engineering Department Preliminary Exam requirements.
+\\ \\
+\textbf{Committee:} 
+\begin{quote} 
+Prof. Sharon Glotzer (Advisor) \\ Prof. Ronald Larson \\ Prof. Robert Ziff \\ Prof. Xiaoming Mao (Cognate: Physics)
+\end{quote}
+
+% =====
+% CONTENTS
+% =====
+\newpage
+\thispagestyle{empty}
+
+
+% =====
+% ONE PAGE SUMMARY
+% =====
+\newpage
+\include{Summary}
+
+
+% =====
+% MAIN TEXT
+% =====
+\clearpage
+\setcounter{page}{1}
+
+
+% =====
+% MOTIVATION AND LITERATURE REVIEW
+% =====
+\input{LitReview}
+
+%\input{Introduction}
+% 1 page statement of the problem, purpose and significance of the research
+%\input{Background}
+% Literature survey and description of research already performed by the applicant
+
+% =====
+% RESEARCH PROPOSAL
+% =====
+% section, each project is a subsection
+\input{ProposedWork}
+
+% =====
+% PRIOR WORK: SEMISYNBIO PROPOSAL
+% =====
+% subsection
+%\input{SemiSynBio}
+
+% =====
+% PRIOR WORK: ACTIVE SHAPES
+% =====
+% section, previous work
+%\input{ActiveShapes}
+
+\section{Previous work}
+
+The research proposed above utilizes a different system from my work to date.
+While the proposed research looks at the interplay of folding geometry and non-specific attractions on equilibrium assembly, I previously studied the role of hard particle shape interactions in an actively driven system. 
+Consistent in this research is an interest in understanding, and characterizing, the role of particle interactions on self-assembly.
+Below is excerpted from an in-preparation paper detailing the role of anisotropy on self-assembly in active systems \cite{Moran_2018_unpublished}. 
+
+\input{active/Introduction}
+\input{active/Results}
+%\input{active/Conclusions}
+%\input{active/Methods}
+
+
+\section{Conclusions and potential impact}
+
+The proposed research seeks to fill a gap in the self-assembly literature: what is the minimal amount of instruction we need to give a system for it to assemble a target structure?
+Recent work has shown that the interaction specificity seen in DNA-mediated addressable assembly is not specific to DNA systems \cite{Reinhardt_2014_PRL}, and that synthetic systems can replicate interaction specificity achieved by nature \cite{Huntley_2016_PNAS}.
+While addressable assembly from a synthetic DNA analog has not been shown yet, an experimental realization is not far along the research horizon.
+However, a core question that will need to be answered is: how much instruction will this system need to provide to successfully assemble its target structure?
+
+The work in this PhD research proposal seeks to provide an approach and metric to answer that question. See Figure \ref{fig:gantt} for key tasks and milestones.
+
+%Ultimately, tailoring self-assembly and addressable complexity are driven by the question:
+%
+%\begin{center}How do I give particles in my system sufficient information to find their proper position in a target whole?\end{center}
+%
+%In systems targeting particular structures, tailored attraction (experimentally via single-stranded DNA or theoretically via an attractive potential) and repulsion can be used to tailor the structure of particle assembly.
+%In systems targeting addressable complexity with DNA origami and protein folding, such instruction can be given with exact detail through genetic code.
+%Work by Brenner and Manoharan has sought to quantify the amount of specificity bonds in such systems can contain, and the limits on target system complexity given differing bond informations.
+%
+%However, missing in this conversation is a measure of the importance of each individual interaction on the emergent behavior of the whole system.
+%I intend to contribute in part during the remainder of my PhD.
+%Instead of simply observing emergent behavior as an outcome of specifically-designed behavior of individuals, we could instead engineer such behavior as a quantifiable outcome of the interaction of an information-rich network of agents.
+%Having such knowledge may allow us to embed multiple ``states'' in a material, such as the minimum folds to move between two target origami structures \cite{An_2011_Robotica}.
+%Being able to measure, and ultimately control, the assembly instructions stored in a starting material is a critical step to enabling materials by design and advancing materials science.
+
+
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[height=3in]{../figures/gantt.pdf}
+\caption{\textbf{Timeline}: Key milestones and tasks from Preliminary Exam through target defense date.}
+\label{fig:gantt}
+\end{center}
+\end{figure}
+
+% ======
+% BIBLIOGRAPHY
+% ======
+\newpage
+\bibliographystyle{unsrt}
+\bibliography{../../library/_PrelimBibliography}
+
+\end{document}

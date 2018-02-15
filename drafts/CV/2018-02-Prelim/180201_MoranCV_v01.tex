@@ -1,0 +1,327 @@
+%% Follow these rules: http://theprofessorisin.com/2016/08/19/dr-karens-rules-of-the-academic-cv/
+
+\documentclass[11pt]{article}
+%A Few Useful Packages
+%\usepackage{fontspec} 					%for loading fonts
+\usepackage{url,parskip} 	%other packages for formatting
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{titlesec}					%custom \section
+\usepackage[margin=0.75in]{geometry}
+\geometry{letterpaper}
+\usepackage{array}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% Allows for multiple bibliographies
+% To update, on the command line, run bibtex BIBNAME where bibnam=journal, etc
+\usepackage[resetlabels]{multibib}
+\newcites{journal}{foo}
+\newcites{contributed}{foo}
+\newcites{contributednorev}{foo}
+\newcites{technicalreport}{foo}
+\newcites{education}{foo}
+\newcites{prep}{foo}
+%\usepackage[ManyBibs]{currvita} % removes bibliography numbers, title
+% Custom bst files are moved to /Users/shannonmoran/Library/texmf/bibtex/bst
+
+% Look into etoolbox-- looks super helpful!
+\usepackage{etoolbox}
+% Removes "foo" headers from bibliography sections
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+% Makes quotes indented further
+\patchcmd{\quote}{\leftmargin}{\leftmargin 2.2cm}{}{}
+\patchcmd{\quote}{\rightmargin}{}{}{}
+
+% Allows for compressed lists
+\usepackage{enumitem}
+\setlist{nosep,topsep=0pt}								% Compresses all lists using enumitem package
+\def\labelitemi{--}
+% For UBER COMPRESSED lists, use
+% [noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt,leftmargin=*]
+
+% Compresses document to look less ridiculously spread-out
+% http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/squeeze.html
+%\setlength{\topmargin}{0mm}
+%\setlength{\topskip}{5mm}
+%\setlength{\parskip}{0mm}
+
+% Allows tables to break across pages, and adjust before/after spacing which defaults to \bigskipamount
+% Sauce: https://tex.stackexchange.com/questions/5683/how-to-remove-top-and-bottom-whitespace-of-longtable
+\usepackage{longtable}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+
+% Set up fancy page numbers
+\pagestyle{fancy}
+\fancyhf{} % sets both header and footer to nothing
+\renewcommand{\headrulewidth}{0pt} % gets rid of the horizontal line that fancy header likes to add
+\rfoot{Moran, Shannon - {\thepage}/\pageref{LastPage}}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+% Allows use of bfseries in titles
+\usepackage{bold-extra}
+
+%Sets up section formats with underlines
+%\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+%\titleformat{\section}{\Large\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+%\titleformat{\section}{\bigskip\bfseries\centering}{}{0em}{}[\titlerule]
+\titleformat{\section}{\bigskip\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+% Setting up format of columns:
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+%\usepackage[absolute]{textpos}
+
+%\setlength{\TPHorizModule}{30mm}
+%\setlength{\TPVertModule}{\TPHorizModule}
+%\textblockorigin{2mm}{0.65\paperheight}
+%\setlength{\parindent}{0pt}
+
+% Assign variable to adjust spacing before tables
+\newcommand{\quotejump}{\vspace{0.5em}}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%% Set up bibliography styles
+\bibliographystyle{cv}
+\bibliographystylejournal{cv}
+\bibliographystylecontributed{cv}
+\bibliographystylecontributednorev{cv}
+\bibliographystyletechnicalreport{cv}
+%\renewcommand*{\cvbibname}{}
+
+%--------------------TITLE-------------
+{\LARGE\textbf{Shannon E. Moran}}
+
+\begin{tabular}{R{2.2cm}L{14.8cm}}
+    \textsc{Dated}     &  \today \\
+%    \textsc{Address}   & 801 E Huron St. \#2, Ann Arbor, MI, USA 48104 \\
+    \textsc{Mobile}     & +1 312 513 9817\\
+    \textsc{Email}     & \href{mailto:moranse@umich.edu}{moranse@umich.edu} \\
+%    \textsc{Web} & \href{shannon-moran.github.io}{shannon-moran.github.io}
+\end{tabular}
+\vspace{-0.5em}
+
+%\href{http://www-personal.umich.edu/~moranse/}{Personal site}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Education
+\section{EDUCATION}
+\begin{longtable}{R{2.2cm}L{14.8cm}}
+2015 -- 2020 & \textbf{University of Michigan, Ann Arbor} \hfill Ann Arbor, MI \\
+\textit{Expected} & Ph.D. candidate in Chemical Engineering \hfill GPA: 3.9/4.0 \\
+& \textit{Advisor}: Professor Sharon C. Glotzer \\
+%& \textit{Project}: ``Engineering non-equilibrium self-assembly through particle anisotropy'' \\
+%& National Science Foundation Graduate Research Fellow, ACM SIGHPC/Intel Fellow, Point Scholar \\
+\\
+% 2018 & \textbf{University of Michigan, Ann Arbor} \hfill Ann Arbor, MI \\
+% \textit{Expected} & M.S. candidate in Applied Mathematics \\
+% & \textit{Focus}: Numerical analysis and scientific computing \\
+% \\
+2008 -- 2012 & \textbf{Massachusetts Institute of Technology} \hfill Cambridge, MA \\
+& B.S. in Chemical Engineering, Minor: Writing \hfill GPA: 4.2/5.0\\
+\end{longtable}
+
+
+%Section: Publications
+\section{PUBLICATIONS}
+%Sections to use in the future (or split up with first/co-author publications)
+%Refereed Journal Articles \\
+%Manuscripts in Submission \\
+%Manuscripts in Preparation
+\textbf{\textit{Peer-reviewed}}
+\begin{quote}
+%\nocitejournal{Shapes2017}
+%\nocitejournal{Collision2017}
+\nocitejournal{Helgeson2014}
+\nocitejournal{Helgeson2012}
+\bibliographyjournal{Publications}
+\end{quote}
+
+\textbf{\textit{Engineering education}}
+\begin{quote}
+\nociteeducation{CEE2018}
+\bibliographyeducation{Publications}
+\end{quote}
+
+%\textbf{\textit{Reports}}
+%\begin{quote}
+%\nocitetechnicalreport{NIST2012}
+%\bibliographytechnicalreport{Publications}
+%\end{quote}
+
+
+%Section: Honors
+\section{HONORS}
+\textbf{\textit{National/International}}\quotejump
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+2017 & \textbf{ACM SIGHPC Computational \& Data Science Fellowship}, Association for Computing Machinery Special Interest Group on High Performance Computing \& Intel  \\
+& \footnotesize{\textit{Ten awarded internationally based on research potential in computational and/or data science}} \\
+2017 & \textbf{NSF Graduate Research Fellowship}, National Science Foundation \\
+2017 & \textbf{Point Scholar}, Point Foundation \\ % 27 scholars, >2100 applicants
+2017 & \textbf{Ford Predoctoral Fellowship Honorable Mention}, Ford Foundation \\
+2011 & \textbf{Link Scholarship}, Kappa Alpha Theta Foundation \\
+& \footnotesize{\textit{Thirteen awarded nationally on the basis of outstanding scholarship and community impact}} \\
+\end{longtable}
+
+\textbf{\textit{Institutional}}\quotejump
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+2017 & \textbf{Dr. Martin Luther King, Jr. Spirit Award}, University of Michigan, Ann Arbor \\
+& \footnotesize{\textit{Twelve awarded (undergrad and grad)}} \\ 
+2017 & \textbf{Outstanding Service Award}, University of Michigan Chemical Engineering \\
+2016 & \textbf{Rackham Graduate Student Research Grant}, University of Michigan \\
+2015 & \textbf{Graduate Student Community Grant}, University of Michigan College of Engineering \\
+2015 & \textbf{Dwight F. Benton Fellowship}, University of Michigan College of Engineering \\
+2015 & \textbf{Polaris Award}, The Boston Consulting Group \\
+& \footnotesize{\textit{Awarded for ``outstanding client impact'' on project for Fortune 100 chemicals company}} \\
+2011 & \textbf{John Reed Fund for Undergraduate Research Awardee}, MIT \\
+2011 & \textbf{Robert Boit Writing Prize for Essay, First Prize}, MIT Writing Department \\
+2011 & \textbf{Singapore-MIT Undergraduate Research Fellowship}, Singapore-MIT Alliance for Research and Technology \\
+2011 & \textbf{Department Special Service Award}, MIT Department of Chemical Engineering \\
+2010 & \textbf{Undergraduate Research Opportunities Program Endowment Awardee}, MIT \\
+2009 & \textbf{Meijer Research Fellowship}, Van Andel Research Institute \\
+\end{longtable}
+
+
+%Section: Work Experience
+\section{PROFESSIONAL EXPERIENCE}
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+2012 -- 2015 & \textbf{The Boston Consulting Group} \hfill Chicago, IL \\
+& Consultant (promoted from Associate in June 2015) \\
+\end{longtable}
+
+
+%Section: Work Experience
+\section{RESEARCH EXPERIENCE}
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+2015 -- \textsc{\footnotesize Pres} & \textbf{Biointerfaces Institute, Computational Assembly Lab} \hfill Ann Arbor, MI \\
+& Graduate Research Assistant \\
+& \textit{Advisor}: Professor Sharon Glotzer \\
+\\
+\textsc{\footnotesize Summer} 2011 & \textbf{National University of Singapore} \hfill Singapore, Singapore \\
+& Research Fellow, BioSystems and Micromechanics Interdisciplinary Research Group, Singapore-MIT Alliance for Research and Technology \\
+& \textit{Advisor}: Professor Linda Griffith \\
+\\
+2010 -- 2012 & \textbf{Novartis-MIT Center for Continuous Manufacturing} \hfill Cambridge, MA \\
+& Research Assistant, Laboratory of Dynamics of Biopolymers \& Complex Fluids \\
+& \textit{Advisors}: Professor Patrick Doyle, Professor Matthew Helgeson (UC Santa Barbara) \\
+\\
+\textsc{\footnotesize Summer} 2009 & \textbf{Van Andel Research Institute} \hfill Grand Rapids, MI \\
+\textsc{\footnotesize Summer} 2008 & Meijer Research Fellow, Laboratory of Cancer \& Developmental Cell Biology \\
+& \textit{Advisor}: Professor Nicholas Duesbery \\
+\end{longtable}
+
+
+% UPDATE FOR SIGHPC FELLOWSHIP: Leadership and service activities (mentoring, tutoring, officer in student organizations, etc.)
+%Section: Service
+\section{LEADERSHIP \& SERVICE}
+\textbf{\textit{University of Michigan, Ann Arbor}}\quotejump
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+2016 -- \textsc{\footnotesize Pres} & \textbf{Graduate \& Professional Board Member}, University of Michigan Diversity, Equity, and Inclusion (DEI) Student Advisory Board \\
+2017 -- \textsc{\footnotesize Pres} & \textbf{Mentorship Lead}, Graduate oSTEM (Out in STEM) \\
+2016 -- \textsc{\footnotesize Pres} & \textbf{Graduate Student Peer Mentor \& Lead Peer Mentor}, Department of Chemical Engineering \\
+2016 -- 2017 & \textbf{Graduate Recruitment Co-Chair}, Department of Chemical Engineering \\
+2016 & \textbf{Panelist}, Seminar for undergraduate researchers on demystifying graduate school \\ % March 8, 2016
+2015 -- 2016 & \textbf{Founder \& Presenter of Professional Communication Workshop Series}, College of Engineering \\
+\end{longtable}
+
+\newpage
+\textbf{\textit{Out for Undergrad (O4U) Conferences}} \\
+\textit{National professional development conferences for high-achieving LGBT undergrads}\quotejump
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+2016 & \textbf{Programming Director}, O4U Engineering \\
+2015 & \textbf{Programming Coordinator}, O4U Business \\
+2013 -- 2015 & \textbf{Professional Mentor}, O4U Business \\
+\end{longtable}
+
+\textbf{\textit{The Boston Consulting Group}}\quotejump
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+2013 -- 2015 & \textbf{Associate Mentor} \\
+2012 -- 2015 & \textbf{LGBT Associate Recruiting Lead}, Midwest Region \\
+2012 -- 2013 & \textbf{Pro-bono project for the Chicago Field Museum}, ``Best Practices and Recommendations for Corporate Giving to Cultural Institutions'' \\
+\end{longtable}
+
+\textbf{\textit{Massachusetts Institute of Technology}}\quotejump
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+2015 -- 2018 & \textbf{Educational Counselor}, MIT Undergraduate Admissions \\
+2010 -- 2011 & \textbf{First Year Associate Advisor} \\
+2010 & \textbf{Secretary}, American Institute of Chemical Engineers (AIChE) Undergrad Chapter \\
+2009 -- 2011 & \textbf{Program Coordinator \& Counselor}, Freshman Leadership Program \\
+2009 & \textbf{MIT Class of 2012 Ring Committee} \\
+2008 -- 2012 & \textbf{Facility Manager (2010)}, Kappa Alpha Theta Fraternity \\
+\end{longtable}
+
+%Section: Teaching Experience
+\section{TEACHING EXPERIENCE}
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+& \textbf{University of Michigan, Ann Arbor} \\
+2016 -- 2018 & Guest Lecturer, Project Management \& Consulting (Center for Entrepreneurship)\\
+& \textit{Instructor}: Amy Cell \\ % (ENTR 599.030)
+\\
+& \textbf{Massachusetts Institute of Technology} \\
+\textsc{\footnotesize Jan}  2012 & Discussion Facilitator, Special Topics Seminar (Political Science Dept.) \\
+& \textit{Instructor}: Tobie Weiner
+\end{longtable}
+
+
+%Section: Posters
+\section{CONFERENCE PRESENTATIONS}
+% Break into invited (which will be talks) and contributed (will be talks and posters)
+\begin{quote}
+\nocitecontributed{AICHE2017}
+\nocitecontributed{EGS2016}
+\nocitecontributed{CBES2016}
+\nocitecontributed{Syracuse2016}
+\nocitecontributed{NUS2011}
+\nocitecontributed{MIT2011}
+\nocitecontributed{AICHE2010}
+\nocitecontributed{VAI2009}
+\nocitecontributed{VAI2008}
+\bibliographycontributed{Publications}
+\end{quote}
+
+
+%Section: Professional education
+\section{PROFESSIONAL EDUCATION}
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+\textsc{\footnotesize July} 2016  & \textbf{Summer School: Active Complex Matter} \hfill Carg\`{e}se, Corsica Island, France \\
+& \textit{Institut d'Etudes Scientifiques de Carg\`{e}se} \\
+& Physics of active systems: Active matter hydrodynamics, micro-organism motility (e.g. swimming, collective motion), and cell motility (e.g. cell migration, blood flow, and crawling) (supported by Rackham Graduate Student Research Grant)
+\end{longtable}
+
+
+
+%Section: Professional Affiliations
+\section{PROFESSIONAL AFFILIATIONS}
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+2017 -- \textsc{\footnotesize Pres}  & \textbf{Associate Member} Sigma Xi \\
+2017 -- \textsc{\footnotesize Pres}  & \textbf{Member} Association for Computing Machinery (ACM) \\
+2017 -- \textsc{\footnotesize Pres}  & \textbf{Member} Society of Industrial and Applied Mathematics (SIAM) \\
+2017 -- \textsc{\footnotesize Pres}  & \textbf{Member} American Chemical Society (ACS) \\
+2016 -- \textsc{\footnotesize Pres}  & \textbf{Member} American Physical Society (APS) \\
+2010 -- \textsc{\footnotesize Pres}  & \textbf{Member} American Institute of Chemical Engineers (AIChE) \\
+\end{longtable}
+
+
+
+%Section: Computational skills
+\section{COMPUTATIONAL SKILLS}
+\begin{longtable}{R{2.2cm} L{14.8cm}}
+\textsc{\footnotesize Programming} & Python, bash, git, HTML/CSS, \LaTeX \\
+\textsc{\footnotesize Software} & \textit{Mathematica}, MATLAB, COMSOL, Adobe InDesign, MS Excel \\
+\textsc{\footnotesize Languages} & Spanish (conversational)
+\end{longtable}
+
+%Section: "I'm a cool mom"
+\section{HOBBIES AND INTERESTS}
+Cooking science, craft cocktails, and recreational hockey
+
+\end{document}

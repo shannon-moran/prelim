@@ -1,0 +1,404 @@
+\begin{thebibliography}{10}
+
+\bibitem{Damasceno_2012_Science}
+Pablo~F. Damasceno, Michael Engel, and Sharon~C. Glotzer.
+\newblock Predictive self-assembly of polyhedtra into complex structures.
+\newblock {\em Science}, 337:453--457, 2012.
+
+\bibitem{Winfree_1998_Nature}
+Erik Winfree, Furong Liu, Lisa~A. Wenzler, and Nadrian~C. Seeman.
+\newblock Design and self-assembly of two-dimensional dna crystals.
+\newblock {\em Nature}, 394(539-544), 1998.
+
+\bibitem{Whitesides_2002_Science}
+George~M. Whitesides and Bartosz Grzybowsi.
+\newblock Self-assembly at all scales.
+\newblock {\em Science}, 295(5564):2418--2421, 2002.
+
+\bibitem{Boles_2016_ChemRev}
+Michael~A. Boles, Michael Engel, and Dmitri~V. Talapin.
+\newblock Self-assembly of colloidal nnaocrystals: From intricate structures to
+  functional materials.
+\newblock {\em Chemical Reviews}, 116(11220-11289), 2016.
+
+\bibitem{GlotzerSolomon_2007_Nature}
+Sharon~C. Glotzer and Michael~J. Solomon.
+\newblock Anisotropy of building blocks and their assembly into complex
+  structures.
+\newblock {\em Nature}, 6:557--562, 2007.
+
+\bibitem{vanAnders_2014_ACSNano}
+Greg van Anders, N.~Khalid Ahmed, Ross Smith, Michael Engel, and Sharon~C.
+  Glotzer.
+\newblock Entropically patchy particles: Engineering valence through shape
+  entropy.
+\newblock {\em ACS Nano}, 8(1):931--940, 2014.
+
+\bibitem{Zhang_2004_NanoLetters}
+Zheni Zhang and Sharon~C. Glotzer.
+\newblock Self-assembly of patchy particles.
+\newblock {\em Nano Letters}, 4(8):1407--1413, 2004.
+
+\bibitem{Millan_2014_ACSNano}
+Jaime~A. Millan, Daniel Ortiz, Greg van Anders, and Sharon~C. Glotzer.
+\newblock Self-assembly of archimedean tilings with enthalpically and
+  entropically patchy polygon.
+\newblock {\em ACS Nano}, 8(3):2918--2928, 2014.
+
+\bibitem{Ye_2013_NatChem}
+Xingchen Ye, Jun Chen, Michael Engel, Jaime~A. Millan, Wenbin Li, Quozhong
+  Xing, Joshua~E. Collins, Cherie~R. Kagan, Ju~Li, Sharon~C. Glotzer, and
+  Christopher~B. Murray.
+\newblock Competition of shape and interaction patchiness for self-assembling
+  nanoplates.
+\newblock {\em Nature Chemistry}, 5:466--473, 2013.
+
+\bibitem{Park_2008_Nature}
+Sung~Yong Park, Abigail K.~R. Lytton-Jean, Byeongdu Lee, Steven Weigand,
+  George~C. Schatz, and Chad~A. Mirkin.
+\newblock Dna-programmable nanopartilce crystallization.
+\newblock {\em Nature}, 451:553--556, 2008.
+
+\bibitem{Ke_2012_Science}
+Yonggang Ke, Luvena~L. Ong, William~M. Shih, and Peng Yin.
+\newblock Three-dimensional structures self-assembled from dna bricks.
+\newblock {\em Science}, 338(6111):1177--1183, 2012.
+
+\bibitem{Rothemund_2006_Nature}
+Paul W.~K. Rothemund.
+\newblock Folding dna to create nanoscale shapes and patterns.
+\newblock {\em Nature}, 440(16):297--302, 2008.
+
+\bibitem{Huang_2016_Nature}
+Po-Ssu Huang, Scott~E. Boyken, and David Baker.
+\newblock The coming of age of \textit{de novo} protein design.
+\newblock {\em Nature}, 537:320--327, 2016.
+
+\bibitem{Huntley_2016_PNAS}
+Miriam~H. Huntley, Arvind Murugan, and Michael~P. Brenner.
+\newblock Information capacity of specific interactions.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  113(21):5841--5846, May 2016.
+
+\bibitem{Dill_1993_CurrOpinStructBiol}
+Ken~A. Dill.
+\newblock Folding proteins: finding a needle in a haystack.
+\newblock {\em Current Opinion in Structural Biology}, 3:99--103, 1993.
+
+\bibitem{Reinhardt_2014_PRL}
+Aleks Reinhardt and Daan Frenkel.
+\newblock Numerical evidence for nucleated self-assembly of dna brick
+  structures.
+\newblock {\em Physical Review Letters}, 112(23), Jun 2014.
+
+\bibitem{Jacobs_2015_PNAS}
+William~M. Jacobs, Aleks Reinhardt, and Daan Frenkel.
+\newblock Rational design of self-assembly pathways for complex multicomponent
+  structures.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  112(20):6313--6318, May 2015.
+
+\bibitem{Jacobs_2016_BiophysicalJournal}
+William~M. Jacobs and Eugene~I. Shakhnovich.
+\newblock Structure-based prediction of protein-folding transition paths.
+\newblock {\em Biophysical Journal}, 111:925--936, 2016.
+
+\bibitem{Dill_1993_PNAS}
+Ken~A. Dill, Klaus~M. Fiebig, and Sun~Hue Chan.
+\newblock Cooperativity in protein-folding kinetics.
+\newblock {\em Proceedings of the National Academy of Sciences}, 90:1942--1946,
+  1993.
+
+\bibitem{Dodd_2018_unpublished}
+Paul~M. Dodd, Pablo~F. Damasceno, and Sharon~C. Glotzer.
+\newblock Polyhedra nets fold cooperatively at high temperature.
+\newblock {\em unpublished}, 2018.
+
+\bibitem{HOOMD_2008}
+Joshua~A. Anderson, Chris~D. Lorenz, and A.~Travesset.
+\newblock General purpose molecular dynamics simulations fully implemented on
+  graphics processing units.
+\newblock {\em Journal of Computational Physics}, 227(10):5342--5359, May 2008.
+
+\bibitem{HOOMD_2015}
+Jens Glaser, Trung~Dac Nguyen, Joshua~A. Anderson, Pak Lui, Filippo Spiga,
+  Jaime~A. Millan, David~C. Morse, and Sharon~C. Glotzer.
+\newblock Strong scaling of general-purpose molecular dynamics simulations on
+  gpus.
+\newblock {\em Computer Physics Communications}, 192:97--107, 2015.
+
+\bibitem{Azam_2009_PlosOne}
+Anum Azam, Timothy~G. Leong, Aasiyeh~M. Zarafshar, and David~H. Gracias.
+\newblock Compactness determines the success of cube and octahedron
+  self-assembly.
+\newblock {\em PLoS One}, 4(2):e4451, 2009.
+
+\bibitem{Levinthal_1969}
+Cyrus Levinthal.
+\newblock How to fold graciously.
+\newblock {\em University of Illinois Bulletin: M\"{o}ssbaun Spectroscopy in
+  Biological Systems Proceedings}, 67(41):22--24, 1969.
+
+\bibitem{Zwanzig_1992_PNAS}
+Robert Zwanzig, Attila Szabo, and Biman Baghi.
+\newblock Levinthal's paradox.
+\newblock {\em Proceedings of the National Academy of Sciences}, 89:20--22,
+  1992.
+
+\bibitem{Martinez_2014_JChemEd}
+Leandro Mart\`{i}nez.
+\newblock Introducing the levinthal's protein folding paradox and its solution.
+\newblock {\em Journal of Chemical Education}, 91:1918--1923, 2014.
+
+\bibitem{Plaxco_1998_JMolBio}
+Kevin~W. Plaxco, Kim~T. Simons, and David Baker.
+\newblock Contact order, transition state placement and the refolding rates of
+  single domain proteins.
+\newblock {\em Journal of Molecular Biology}, 277:985--994, 1998.
+
+\bibitem{Dill_2007_CurrOpinStructBio}
+Ken~A. Dill, S~Banu Ozkan, Thomas~R. Weikl, John~D. Chodera, and Vincent~A.
+  Voelz.
+\newblock The protein folding problem: when will it be solved?
+\newblock {\em Current Opinion in Structural Biology}, 17:342--346, 2007.
+
+\bibitem{Jankowski_2012_SoftMatter}
+Eric Jankowski and Sharon~C. Glotzer.
+\newblock Screning and designing patchy particles for optimized self-assembly
+  propensity through assembly pathway engineering.
+\newblock {\em Soft Matter}, 8(2852), 2012.
+
+\bibitem{Smeeton_2014_JCompChem}
+Lewis~C. Smeeton, Mark~T. Oakley, and Roy~L. Johnston.
+\newblock Visualizing energy landscapes with metric disconnectivity graphs.
+\newblock {\em Journal of Computational Chemistry}, 35:1481--1490, 2014.
+
+\bibitem{Becker_1997_JChemPhys}
+Oren~M. Becker and Martin Karplus.
+\newblock The topology of multidimensional potential energy surfaces: Theory
+  and application to peptide structure and kinetics.
+\newblock {\em The Journal of Chemical Physics}, 106(1495), 1997.
+
+\bibitem{Wales_2017_JChemPhys}
+David~J. Wales.
+\newblock Atomic clusters with addressable complexity.
+\newblock {\em The Journal of Chemical Physics}, 146(054306), 2017.
+
+\bibitem{Wales_2006_JChemPhysB}
+David~J. Wales and Tetyana~V. Bogdan.
+\newblock Potential energy and free energy landscapes.
+\newblock {\em Journal of Physical Chemistry B}, 110:20765--20776, 2006.
+
+\bibitem{Han_2017_SciAdv}
+Koohee Han, C.~Wyatt Shield~IV, Nidhi~M. Diwikar, Buvnesh Bhari, Gabriel~P.
+  L\`{o}pez, and Orlin~D. Velev.
+\newblock Sequence-encoded colloidal origami and microbot assemblies from
+  patchy magnetic cubes.
+\newblock {\em Science Advances}, 3(e1701108), 2017.
+
+\bibitem{An_2011_Robotica}
+Byoungkwon An, Nadia Benbernou, Erik~D. Demaine, and Daniela Rus.
+\newblock Planning to fold multiple objects from a single self-folding sheet.
+\newblock {\em Robotica}, 29(01):87--102, Jan 2011.
+
+\bibitem{Tolley_2014_SMS}
+Michael~T. Tolley, Samuel~M. Felton, Shuhei Miyashita, Daniel Aukes, Daniela
+  Rus, and Robert~J Wood.
+\newblock Self-folding origami: shape memory composites activated by uniform
+  heating.
+\newblock {\em Smarter Materials and Structures}, 23(094006), 2014.
+
+\bibitem{Overvelde_2017_Nature}
+Johannes T.~B. Overvelde, James~C. Weaver, Chuck Hoberman, and Katia Bertoldi.
+\newblock Rational design of reconfigurable prismatic architected materials.
+\newblock {\em Nature}, 541:347--352, 2017.
+
+\bibitem{Moran_2018_unpublished}
+Shannon~E. Moran, Isaac~R. Bruss, and Sharon~C. Glotzer.
+\newblock Leveraging anisotropy for tailored self-assembly of active matter.
+\newblock {\em in preparation}, 2018.
+
+\bibitem{Ramaswamy_2010_AnnRevConMatPhys}
+Sriram Ramaswamy.
+\newblock The mechanics and statistics of active matter.
+\newblock {\em Annual Review of Condensed Matter Physics}, 1(1):323--345, Aug
+  2010.
+
+\bibitem{MarchettiEA_2013_RevModPhys}
+M.~C. Marchetti, J.~F. Joanny, S.~Ramaswamy, T.~B. Liverpool, J.~Prost, Madan
+  Rao, and R.~Aditi Simha.
+\newblock Hydrodynamics of soft active matter.
+\newblock {\em Reviews of Modern Physics}, 85(3):1143--1189, Jul 2013.
+
+\bibitem{BechingerEA_2016_RevModPhys}
+Clemens Bechinger, Roberto Di~Leonardo, Hartmut L{\"o}wen, Charles Reichhardt,
+  Giorgio Volpe, and Giovanni Volpe.
+\newblock Active particles in complex and crowded environments.
+\newblock {\em Reviews of Modern Physics}, 88(4), Nov 2016.
+
+\bibitem{MarchettiEA_2016_CurrentOpinionColloidInterfaceScience}
+M.~C. Marchetti, Y.~Fily, S.~Henkes, A.~Patch, and D.~Yllanes.
+\newblock Minimal model of active colloids highlights the role of mechanical
+  interactions in controlling the emergent behavior of active matter.
+\newblock {\em Current Opinion in Colloid \& Interface Science}, 21:34--43,
+  2016.
+
+\bibitem{VicsekEA_1995_PRL}
+T.~Vicsek, E.~Czir\'{o}k, Ben-Jacob, I.~Cohen, and O.~Shochet.
+\newblock Novel type of phase transition in a system of self-driven particles.
+\newblock {\em Physical Review Letters}, 75(6), 1995.
+
+\bibitem{Cates_2010_PNAS}
+M.~E. Cates, D.~Marenduzzo, I.~Pagonabarraga, and J.~Tailleur.
+\newblock Arrested phase separation in reproducing bacteria creates a generic
+  route to pattern formation.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  107(26):11715--11720, 2010.
+
+\bibitem{CatesTailleur_2013_EPL}
+M.~E. Cates and J.~Tailleur.
+\newblock When are active brownian particles and run-and-tumble particles
+  equivalent? consequences for motility-induced phase separataion.
+\newblock {\em Europhysics Letters}, 101(20010), 2013.
+
+\bibitem{FilyMarchetti_2012_PRL}
+Yaouen Fily and M.~Cristina Marchetti.
+\newblock Athermal phase separation of self-propelled particles with no
+  alignment.
+\newblock {\em Physical Review Letters}, 108(23), Jun 2012.
+
+\bibitem{RednerEA_2013_PRE}
+Gabriel~S. Redner, Aparna Baskaran, and Michael~F. Hagan.
+\newblock Reentrant phase behavior in active colloids with attraction.
+\newblock {\em Physical Review E}, 88(1), Jul 2013.
+
+\bibitem{RednerEA_2013_PRL}
+Gabriel~S. Redner, Michael~F. Hagan, and Aparna Baskaran.
+\newblock Structure and dynamics of a phase-separating active colloidal fluid.
+\newblock {\em Physical Review Letters}, 110(5), Jan 2013.
+
+\bibitem{Richard_2016_SoftMatter}
+David Richard, H.~Loewen, and Thomas Speck.
+\newblock Nucleation pathway and kinetics of phase-separating active brownian
+  particles.
+\newblock {\em Soft Matter}, 12:5257--5264, 2016.
+
+\bibitem{Redner_2016_PRL}
+Gabriel~S. Redner, Caleb~G. Wagner, A.~Baskaran, and Michael~F. Hagan.
+\newblock Classical nucleation theory description of active colloid assembly.
+\newblock {\em Physical Review Letters}, 117(148002), 2016.
+
+\bibitem{Bruss_2017_arxiv}
+Isaac~R. Bruss and Sharon~C. Glotzer.
+\newblock Phase separation of self-propelled ballistic particles.
+\newblock {\em arxiv}, (1712.01983), 2017.
+
+\bibitem{PalacciEA_2013_Science}
+J.~Palacci, S.~Sacanna, A.~P. Steinberg, D.~Pine, and P.~M. Chaikin.
+\newblock Living crystals of light-activated colloidal surfers.
+\newblock {\em Science}, 339:936--940, 2013.
+
+\bibitem{PetroffEA_2015_PRL}
+Alexander~P. Petroff, Xiao-Lun Wu, and Albert Libchaber.
+\newblock Fast-moving bacteria self-organize into active two-dimensional
+  crystals of rotating cells.
+\newblock {\em Physical Review Letters}, 114(15), Apr 2015.
+
+\bibitem{WensinkLoewen_2012_JPhysConMat}
+H.~H. Wensink and H.~Loewen.
+\newblock Emergent states in dense systems of active rods: from swarming to
+  turbulence.
+\newblock {\em Journal of Physics: Condensed Matter}, 24(464130), 2012.
+
+\bibitem{YangEA_2010_PRE}
+Yingzi Yang, Vincent Marceau, and Gerhard Gompper.
+\newblock Swarm behavior of self-propelled rods and swimming flagella.
+\newblock {\em Physical Review E}, 82(3), Sep 2010.
+
+\bibitem{Wensink_2014}
+H.~H. Wensink, V.~Kantsler, R.~E. Goldstein, and J.~Dunkel.
+\newblock Controlling active self-assembly through broken particle-shape
+  symmetry.
+\newblock {\em Physical Review E}, 89(1), Jan 2014.
+
+\bibitem{NguyenEA_2014_PRL}
+Nguyen~H. P. Nguyen, Daphne Klotsa, Michael Engel, and Sharon~C. Glotzer.
+\newblock Emergent collective phenomena in a mixture of hard shapes through
+  active rotation.
+\newblock {\em Physical Review Letters}, 112(7), Feb 2014.
+
+\bibitem{SabrinaEA_2015_SoftMatter}
+Syeda Sabrina, Matthew Spellings, Sharon~C. Glotzer, and Kyle J.~M. Bishop.
+\newblock Coarsening dynamics of binary liquids with active rotation.
+\newblock {\em Soft Matter}, 11(43):8409--8416, 2015.
+
+\bibitem{SpellingsEA_2015_PNAS}
+Matthew Spellings, Michael Engel, Daphne Klotsa, Syeda Sabrina, Aaron~M. Drews,
+  Nguyen H.~P. Nguyen, Kyle J.~M. Bishop, and Sharon~C. Glotzer.
+\newblock Shape control and compartmentalization in active colloidal cells.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  112(34):E4642--E4650, Aug 2015.
+
+\bibitem{SumaEA_2014_EPL}
+A.~Suma, G.~Gonnella, D.~Marenduzzo, and E.~Orlandini.
+\newblock Motility-induced phase separation in an active dumbbell fluid.
+\newblock {\em Europhysics Letters}, 108(56004), 2014.
+
+\bibitem{PrymidisEA_2016_SoftMatter}
+V.~Prymidis, S.~Samin, and L.~Filion.
+\newblock State behaviour and dynamics of self-propelled brownian squares: a
+  simulation study.
+\newblock {\em Soft Matter}, 2016.
+
+\bibitem{Mann_2009_NatureMaterials}
+Stephen Mann.
+\newblock Self-assembly and transformation of hybrid nano-objects and
+  nanostructures under equilibrium and non-equilibrium conditions.
+\newblock {\em Nature Materials}, 8(10):781--792, Sep 2009.
+
+\bibitem{Onsager_1949_ANYAS}
+L.~Onsager.
+\newblock The effects of shape on the interaction of colloidal particles.
+\newblock {\em Annals New York Academy of Sciences}, pages 627--659, 1949.
+
+\bibitem{Manoharan_2015_Science}
+V.~N. Manoharan.
+\newblock Colloidal matter: Packing, geometry, and entropy.
+\newblock {\em Science}, 349(6251):1253751--1253751, Aug 2015.
+
+\bibitem{vanAndersEA_2014_PNAS}
+G.~van Anders, D.~Klotsa, N.K. Ahmed, Michael Engel, and Sharon~C. Glotzer.
+\newblock Understanding shape entropy through local dense packing.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  111(45):E4812--E4821, 2014.
+
+\bibitem{VanDerMeerDijkstraFilion_2016_SoftMatter}
+B.~van~der Meer, M.~Dijkstra, and L.~Filion.
+\newblock Removing grain boundaries from three-dimensional colloidal crystals
+  using active dopants.
+\newblock {\em Soft Matter}, 12(25):5630--5635, 2016.
+
+\bibitem{Mallory_2016_PRE}
+S.~A. Mallory and A.~Cacciuto.
+\newblock Activity-assisted self-assembly of colloidal particles.
+\newblock {\em Physical Review E}, 94(022607), 2016.
+
+\bibitem{ZhangYanEA_2016_AngewandteChemie}
+Jie Zhang, Jing Yan, and Steve Granick.
+\newblock Directed self-assembly pathways of active colloidal clusters.
+\newblock {\em Angewandte Chemie International Edition}, 55(17):5166--5169, Mar
+  2016.
+
+\bibitem{DEM_2017}
+Matthew Spellings, Ryan~L. Marson, Joshua~A. Anderson, and Sharon~C. Glotzer.
+\newblock Gpu accelerated discrete element method (dem) molecular dynamics for
+  conservative, faceted particle simulations.
+\newblock {\em Journal of Computational Physics}, 334:460--467, 2017.
+
+\bibitem{AtkinsonEA_2012_PRE}
+Steven Atkinson, Yang Jiao, and Salvatore Torquato.
+\newblock Maximally dense packings of two-dimensional convex and concave
+  noncircular particles.
+\newblock {\em Physical Review E}, 86(3), Sep 2012.
+
+\end{thebibliography}
