@@ -1,0 +1,51 @@
+\documentclass[11pt]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage[margin=1in]{geometry}
+\geometry{letterpaper}
+\usepackage[parfill]{parskip}    % Begins paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+\usepackage{hyperref}			% Allows me to link in the text with \href{link}{description}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{titling}			% Allows me to set the \droptitle to make it less obnoxious
+\usepackage{titlesec}			% Allows me to use \titlespacing command
+\usepackage{blindtext}			% Allows me to generate Lorem Ipsum
+\usepackage{pdfpages}			% Allows me to include pdf pages with the \includepdf[pages=-]{Filename.pdf} command
+\renewcommand{\familydefault}{\sfdefault}	% uses san serif font
+%\usepackage{cmss}			% changes font
+
+% This was the order used for 
+% Set text to 6 lines of 11pt font per 1 inch. Normal baseline skip is 13.6
+% Source: https://tex.stackexchange.com/questions/23824/6-lines-in-one-inch
+% 1 inch = 72.27pt
+% First line is 11pts
+% Remainder spread as (61.27/5)/13.6 = 0.901
+\linespread{0.901}
+
+% Define useful shortcuts
+\def\d{\text{d}}
+\def\Pe{\text{Pe}}
+
+% Spacing changes to make the document more compressed
+\usepackage{enumitem}			% Allows me to set spacing to be more compressed for lists globally
+\titlespacing{\section}{0em}{2em}{0em}		% Sauce: http://www.ctex.org/documents/packages/layout/titlesec.pdf, bottom p4
+\setlist{nosep}								% Compresses all lists using enumitem package
+
+% Headers
+\pagestyle{fancy}
+\lhead{Shannon Moran}
+
+\title{Designing an information-driven pathway approach for targeted self-assembly}
+\author{Shannon Moran}
+\date{February 21, 2018}
+
+
+\begin{document}
+
+\include{Summary}
+
+
+\end{document}

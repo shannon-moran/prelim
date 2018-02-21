@@ -1,0 +1,42 @@
+\thispagestyle{empty}
+\section*{Project Summary: ``Designing an information-driven pathway approach for targeted self-assembly''}
+
+% Include a self-contained description of the activity proposed;
+% potential hazards and safety precautions should be identified;
+% max one page
+
+Self-assembly is a powerful tool for creating complex materials with tailored particle interactions.
+Systems order with interactions as simple as hard-particle excluded volume and as complex as DNA-programmed origami. 
+While much research has been focused on understanding how to design highly-specific building blocks and predict assembled structure, relatively little work has been focused on optimizing specificity in self-assembly system design.
+
+Put another way-- 
+\textbf{what is the minimal set of instructions needed to achieve targeted, self-assembled complexity?}
+
+To investigate this question, we use a system of folding nets (of the five Platonic solids) with non-specific edge interactions.
+Previous molecular dynamics studies of this system have shown that compact nets with more leaves are more likely to be able to fold into (i.e. assemble) the Platonic solid from which they were derived (i.e. their target structure).   
+Authors observe that in these nets, folding pathways are enabled by the formation of local, native bonds, mirroring phenomena observed in protein folding.
+
+This suggests that though the interactions are not specific, the combination of geometry and attraction serve to make some of these bonds more effective than others.
+In turn, this suggests that it is possible to identify bonds that are more critical to assembly than others. 
+If we are able to rank the importance of interactions on the yield of an assembly pathway, then it stands to reason that we can determine which interactions are the minimally sufficient set needed to guide assembly into a target structure. 
+
+\textbf{Project 1: Define a measure of pathway information}\\
+Studies have successfully developed measurements of the specificity (and resulting information capacity) for specific interactions of lock and key pairs.
+However, no such metric exists linking a bond to the self-assembly yield of a starting configuration.
+We propose developing a metric that measures the likelihood of a bond being a part of a successful assembly pathway-- i.e. the amount of mutual information between the bond and the final assembled structure.
+
+Using this method, we can identify the most critical bonds for assembly and develop heuristics for identifying them in un-studied nets.
+We can test our hypotheses that certain bonds are the most critical for successful assembly by incrementally adding bonds identified as ``critical'' to nets known to have poor yield of their target structure.
+In this way, we can then also develop a measure of information efficiency of a structure relative to its target structure.
+How much information must we give a system (in the form of specified bonds) for a starting material to reach its target structure at a given yield?
+
+\textbf{Project 2: Develop energy landscapes for identifying kinetic barriers to assembly} \\
+We hypothesize that seeding a structure with critical bonds can help a net avoid searching local minima en route to the global minimum. 
+We can identify these local minima by building net disconnectivity graphs which convert a net's folding energy landscape into an easily-digestible network of free-energy minima and transition states.
+Using these disconnectivity graphs, we will look for features of good- and poor-folding nets. 
+Additionally, studying optimal energetic pathways may give us further insight into why nets with more leaves fold better than others.
+
+\textbf{Project 3: Design pluripotent nets from minimal instructions} \\
+Finally, understanding the minimum amount of instruction needed to drive a configuration to a given assembly opens the possibility of embedding instructions for multiple states into a starting material.
+We call such a material pluripotent. 
+Given the rules for minimal assembly instructions from Project 1 and the energy landscapes developed in Project 2, we will attempt to use a minimum set of specific bonds to embed multiple potential target structures into a net.

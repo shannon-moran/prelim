@@ -1,63 +1,0 @@
-\section{Description of proposed research (7-8 pg, 2-3 pg per aim)}
-% Including method or approach and expected difficulties
-% This must constitute about 50\% of the text of the written proposal: 7-8 pages
-% Clear statement of the work to be undertaken and must include:
-% Objectives for the period of the proposed work and expected significance
-% Relation to the present state of knowledge in the field and to work in progress at Michigan/elsewhere
-% Expected research program sequence
-% Decision points expected during the course of the research
-% Methods of data reduction, evaluation, interpretation and presentation
-
-``Information'' are those factors that impact the yield and kinetics of self-assembly (thermodynamics of the free energy landscape and the kinetics of the path to get to a target structure from a given starting point).
-
-Specifically, as we look to both understand how nature governs self-assembly into target structures, we need a language to understand this.`
-Nature is very good at already picking an optimized route through a free energy landscape \cite{Jacobs_2016_BiophysicalJournal}.
-
-\subsection{What I want to accomplish in my thesis}
-
-1) Can we figure out which bonds/interactions are the most critical in an assembly process or an assembly pathway?We intuitively know that in Need transition state or pathway sampling methods (or might actually be able to get this just from Paul?s data? That would be sick)2) With this metric, can we then define and minimize an information efficiency, e.g. the amount of bond specificity we need across the system to get a given success rate of assembly?E.g. is it more efficient 3) Given all this, can we then use machine learning to determine a priori the ?most efficient? level of specificity for self-assembling a target structure?How to do pathway design is kind of an open questionWe can find feature correlations, like Paul didThere?s also an approach called ?Computable Information Density? published by some colleagues (Chaikin) on the arxiv last AugustBasic idea is that you can (1) somehow represent your system as an array of information which you can (2) run though a compression algorithm and (3) the ?information? is just the length of that compressed informationWould be really interesting to see if I could extend that idea to the features of an assembly system? in this case, nets? and 
-
-
-1) Define a measure of pathway information. \\
-\begin{itemize}
-\item We already have ways of measuring how good a particular bond is
-\item Are there particular bonds/connections that are the most important to get correct to enable forming the desired final structure?
-\item  
-\end{itemize}
-
-
-
-2) Use that measure of pathway information to design ideal pre-cursors for target structures. \\
-
-
-
-3) Attempt to use machine learning to predict ideal pre-cursors for given target structures. \\
-\begin{itemize}
-\item \cite{Long_2014_JPhysChemB}: Nonlinear Machine Learning of Patchy Colloid Self-Assembly Pathways and Mechanisms out of the Furguson group
-\end{itemize}
-
-
-4) Why is it important we find the ``most important'' pathway points? from \cite{Stern_2017_arxiv} \\
-How then can self-folding origami be folded with a
-minimal number of actuators? A lesson can be drawn
-from similar glassy landscape search problems in models
-of protein folding (e.g., Levinthal?s paradox [17, 19, 20,
-41]) and related NP-hard satisfiability (SAT) problems
-[21, 42] that vary from the Traveling Salesman Problem
-to Sudoku [43]. A common element in these satisfiability
-problems is that random seeding of the search for
-the global minimum leads to repeated backtracking after
-reaching local minima, both in the context of computer
-algorithms (as the DPLL algorithm for k-SAT [21]) or for
-physical dynamics (as in protein folding) [42]. However,
-careful seeding of the search - e.g., if the right boxes are
-filled in first in Sudoku [43] or if the right parts of the protein
-are folded first - can greatly reduce or even eliminate
-backtracking [21] before reaching the global minimum.
-Correct seeding is even more critical for origami since
-folding is assumed to happen at ?zero temperature? (e.g.,
-without any noise or fluctuations). As a result, the structure
-cannot backtrack out of a local minimum as in the
-case of non-zero temperature SAT problems [42].
-
-This reference also has a really good introduction section relating origami and self-assembly \cite{Stern_2017_arxiv}.
